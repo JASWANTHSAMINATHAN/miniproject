@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .booking-content {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f3f4f6;
+        }
+
+        .booking-content h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .booking-content form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-content form input,
+        .booking-content form select,
+        .booking-content form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .booking-content form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .booking-content form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">TravelMate</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signin.html">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="booking-content">
+        <h1>Book Your Ticket</h1>
+        <p>Fill out the form below to book your ticket to an amazing destination!</p>
+
+        <form id="bookingForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="destination" required>
+                <option value="">Select Destination</option>
+                <option value="Paris">Paris</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="New York">New York</option>
+                <option value="Dubai">Dubai</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Redirect to the payment page
+            window.location.href = "payment.html";
+        });
+    </script>
+</body>
+
+</html>

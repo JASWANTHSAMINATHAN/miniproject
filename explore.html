@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .destination-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination-card .details {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .destination-card h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .destination-card p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .destination-card button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .destination-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">TravelMate</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signin.html">Sign Out</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Explore Amazing Destinations</h1>
+        <p>Discover some of the most breathtaking locations around the globe.</p>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="https://images.javatpoint.com/tourist-places/images/25-tourist-places-in-india1.png"
+                    alt="Destination 1">
+                <div class="details">
+                    <h2>Taj Mahal, India</h2>
+                    <p>Experience the beauty of this iconic wonder of the world.</p>
+                    <button onclick="window.location.href='booking.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.javatpoint.com/tourist-places/images/tourist-places-in-russia.png"
+                    alt="Destination 2">
+                <div class="details">
+                    <h2>Moscow, Russia</h2>
+                    <p>Dive into the rich history and culture of Moscow.</p>
+                    <button onclick="window.location.href='booking.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://taxirajasthan.in/manage/uploads/news_events/PLg4p3wiYl.png" alt="Destination 3">
+                <div class="details">
+                    <h2>Jaipur, India</h2>
+                    <p>Explore the Pink City and its royal heritage.</p>
+                    <button onclick="window.location.href='booking.html'">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
